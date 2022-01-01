@@ -46,12 +46,21 @@ Plug 'tpope/vim-surround'
 Plug 'bronson/vim-trailing-whitespace'
 " 閉じカッコを補完
 Plug 'cohama/lexima.vim'
+" gitの差分を表示
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 """"""""""""""""""""""""""""""""""""""
 
 " マークダウンはvim-poluglotを対象外にする
 let g:polyglot_disabled = ['markdown']
+
+" 背景色を記号の列と一致
+let g:gitgutter_set_sign_backgrounds = 1
+" 記号色を設定
+highlight GitGutterAdd    guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 """"""""""""""""""""""""""""""""""""""
 " Unite.vimの設定
@@ -77,6 +86,12 @@ au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 
 " vimを立ち上げた時にvim-indent-guidesが自動起動する
 let g:indent_guides_enable_on_vim_startup = 1
+" 可視化を行う改装を設定
+let g:indent_guides_start_level = 2
+" 可視化領域のサイズ
+let g:indent_guides_guide_size = 1
+" 可視化を無効化するファイルを指定
+let g:indent_guides_exclude_filetypes = ['help', 'nerdtree', 'tagbar', 'unite']
 
 " 全角スペースを可視化
 function! ZenkakuSpace()
@@ -85,9 +100,9 @@ endfunction
 
 if has('syntax')
 	augroup ZenkakuSpace
-		autocmd!
-		autocmd ColorScheme * call ZenkakuSpace()
-	  autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd('ZenkakuSpace', '　')
+	  autocmd!
+    autocmd ColorScheme * call ZenkakuSpace()
+    autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd('ZenkakuSpace', '　')
 	augroup END
 	call ZenkakuSpace()
 endif
