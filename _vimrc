@@ -1,3 +1,6 @@
+" マークダウンはvim-poluglotを対象外にする
+let g:polyglot_disabled = ['markdown']
+
 " 挙動を vi 互換ではなく、Vim のデフォルト設定にする設定
 set nocompatible
 " スワップファイルは使わない
@@ -51,9 +54,6 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 """"""""""""""""""""""""""""""""""""""
-
-" マークダウンはvim-poluglotを対象外にする
-let g:polyglot_disabled = ['markdown']
 
 " 背景色を記号の列と一致
 let g:gitgutter_set_sign_backgrounds = 1
