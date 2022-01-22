@@ -51,7 +51,8 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'cohama/lexima.vim'
 " gitの差分を表示
 Plug 'airblade/vim-gitgutter'
-
+" emmetが利用できる
+Plug 'mattn/emmet-vim'
 call plug#end()
 """"""""""""""""""""""""""""""""""""""
 
