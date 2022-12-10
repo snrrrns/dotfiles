@@ -12,9 +12,11 @@ set segment_separator $separator_triangle
 set icon_miss $icon_asease
 set icon_ok $icon_smile
 
+# バーの色
 set color_user
 set color_git_status_bar
 
+# 区切り
 function _segment
     set_color -b $argv[1] $argv[2]
     echo -n "$segment_separator "
@@ -44,6 +46,7 @@ function _prompt_user
     end
 end
 
+# gitのステータスごとにバーの色が変化
 function _change_color_git_status_bar
     if [ (_is_git_dirty) ]
         set color_git_status_bar $color_git_dirty
@@ -52,6 +55,7 @@ function _change_color_git_status_bar
     end
 end
 
+# gitのステータスがdirtyかどうか
 function _is_git_dirty
     echo (command git status -s --ignore-submodules=dirty 2> /dev/null)
 end
