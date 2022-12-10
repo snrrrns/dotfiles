@@ -24,3 +24,5 @@ end
 
 # エイリアス
 alias dc='docker compose'
+
+export LSCOLORS=Gxfxcxdxbxegedabagacad
