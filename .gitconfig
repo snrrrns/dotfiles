@@ -6,3 +6,4 @@
   co = checkout
   b = branch
   st = status
+  df = diff
