@@ -29,16 +29,10 @@ syntax on
 """""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 
-" ファイルオープンを便利に
-Plug 'Shougo/unite.vim'
-" Unite.vimで最近使ったファイルを表示できるようにする
-Plug 'Shougo/neomru.vim'
 " シンタックスハイライトに対応するファイルを拡張
 Plug 'sheerun/vim-polyglot'
 " インデントの可視化
 Plug 'nathanaelkane/vim-indent-guides'
-" ファイルをtree表示
-Plug 'scrooloose/nerdtree'
 " Ruby向けにendを自動挿入する
 Plug 'tpope/vim-endwise'
 " コメントON/OFFを手軽に実行
@@ -63,28 +57,6 @@ highlight GitGutterAdd    guifg=#009900 ctermfg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
-""""""""""""""""""""""""""""""""""""""
-" Unite.vimの設定
-""""""""""""""""""""""""""""""""""""""
-" バッファ一覧
-noremap <C-P> :Unite buffer<CR>
-" ファイル一覧
-noremap <C-N> :Unite -buffer-name=file file<CR>
-" 最近使ったファイルの一覧
-noremap <C-Z> :Unite file_mru<CR>
-" sourcesを「今開いているファイルのディレクトリ」とする
-noremap :uff :<C-u>UniteWithBufferDir file -buffer-name=file<CR>
-" ウインドウを分割して開く
-au FileType unite nnoremap <silent> <buffer> <expr> <C-J> unite#do_action('split')
-au FileType unite inoremap <silent> <buffer> <expr> <C-J> unite#do_action('split')
-" ウインドウを縦に分割して開く
-au FileType unite nnoremap <silent> <buffer> <expr> <C-K> unite#do_action('vsplit')
-au FileType unite inoremap <silent> <buffer> <expr> <C-K> unite#do_action('vsplit')
-" ESCを2回押すと終了する
-au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
-au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
-""""""""""""""""""""""""""""""""""""""
-
 " vimを立ち上げた時にvim-indent-guidesが自動起動する
 let g:indent_guides_enable_on_vim_startup = 1
 " 可視化を行う改装を設定
@@ -101,7 +73,7 @@ endfunction
 
 if has('syntax')
 	augroup ZenkakuSpace
-		autocmd!
+	  autocmd!
     autocmd ColorScheme * call ZenkakuSpace()
     autocmd VimEnter,WinEnter,BufRead * let w:m1=matchadd('ZenkakuSpace', '　')
 	augroup END
