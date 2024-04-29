@@ -4,7 +4,7 @@ set -l icon_plus \uf067
 set -l icon_three_point_reader \uf015
 set -l icon_asease \U1f605
 set -l icon_smile \U1f60a
-set icon_home \uf7db
+set icon_home \uf015
 set icon_folder \uf07c
 
 # 区切り文字の名前を登録
