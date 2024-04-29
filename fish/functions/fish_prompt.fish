@@ -1,7 +1,7 @@
 # 区切り文字やアイコン
 set -l separator_triangle \ue0b0
 set -l icon_plus \uf067
-set -l icon_three_point_reader \uf6d7
+set -l icon_three_point_reader \uf015
 set -l icon_asease \U1f605
 set -l icon_smile \U1f60a
 set icon_home \uf7db
