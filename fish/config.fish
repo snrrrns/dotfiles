@@ -23,6 +23,7 @@ function fish_user_key_bindings
 end
 
 # エイリアス
+alias rand='cat /dev/urandom | base64 | fold -w 16 | head -n 1'
 alias dc='docker compose'
 
 export LSCOLORS=Gxfxcxdxbxegedabagacad

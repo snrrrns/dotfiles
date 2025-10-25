@@ -19,6 +19,9 @@ set autoindent
 set smartindent
 " 256色に対応
 set t_Co=256
+" クリップボードの共有
+set clipboard=unnamed
+
 " カラースキーマの指定
 colorscheme molokai
 " 構文ごとに文字色を変化
