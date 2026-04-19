@@ -1,6 +1,9 @@
 .DS_Store
+.gitconfig.local
 fish/completions/docker.fish
 fish/completions/kubectl.fish
 fish/completions/orbctl.fish
 fish/conf.d/fish_frozen_*
 fish/conf.d/local.fish
+fish/fish_history
+fish/fish_variables
