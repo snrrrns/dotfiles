@@ -7,3 +7,4 @@ fish/conf.d/fish_frozen_*
 fish/conf.d/local.fish
 fish/fish_history
 fish/fish_variables
+.idea
