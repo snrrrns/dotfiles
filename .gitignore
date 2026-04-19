@@ -3,3 +3,4 @@ fish/completions/docker.fish
 fish/completions/kubectl.fish
 fish/completions/orbctl.fish
 fish/conf.d/fish_frozen_*
+fish/conf.d/local.fish
