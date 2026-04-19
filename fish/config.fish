@@ -1,7 +1,3 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
 # pecoとghqの連携でリポジトリを一覧表示
 function peco_ghq
     set -l query (commandline)
