@@ -1,6 +1,10 @@
 [include]
   path = ~/.gitconfig.local
 
+[core]
+  fsmonitor = true
+  untrackedCache = true
+
 [alias]
   cm = commit
   co = checkout
