@@ -1,0 +1,16 @@
+font-family = Cousine Nerd Font
+font-size = 14
+font-thicken = true
+font-thicken-strength = 150
+theme = TokyoNight
+cursor-style = underline
+cursor-style-blink = false
+scrollback-limit = 1000000
+keybind = global:opt+space=toggle_quick_terminal
+quick-terminal-position = top
+quick-terminal-size = 100%
+quick-terminal-screen = macos-menu-bar
+background-opacity = 0.78
+initial-window = false
+quick-terminal-autohide = false
+quick-terminal-animation-duration = 0
