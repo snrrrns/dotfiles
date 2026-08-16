@@ -16,3 +16,10 @@ auto_switch = false
 pane_gaps = false
 pane_scrollbars = false
 agent_panel_sort = "spaces"
+
+show_agent_labels_on_pane_borders = true
+[ui.sound]
+enabled = false
+
+[ui.toast]
+delivery = "off"
