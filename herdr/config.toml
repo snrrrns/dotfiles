@@ -9,4 +9,10 @@ prefix = "ctrl+t"
 default_shell = "/opt/homebrew/bin/fish"
 
 [theme]
-name = "solarized"
+name = "tokyo-night"
+auto_switch = false
+
+[ui]
+pane_gaps = false
+pane_scrollbars = false
+agent_panel_sort = "spaces"
