@@ -1,0 +1,12 @@
+# herdr configuration
+# Place this file at ~/.config/herdr/config.toml
+# Managed via dotfiles: symlinked from ~/dotfiles/herdr/config.toml
+
+[keys]
+prefix = "ctrl+t"
+
+[terminal]
+default_shell = "/opt/homebrew/bin/fish"
+
+[theme]
+name = "solarized"
