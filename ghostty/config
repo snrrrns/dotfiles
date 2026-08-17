@@ -3,8 +3,8 @@ font-size = 14
 font-thicken = true
 font-thicken-strength = 150
 theme = TokyoNight
-cursor-style = underline
-cursor-style-blink = false
+cursor-style = block
+cursor-style-blink = true
 scrollback-limit = 1000000
 keybind = global:opt+space=toggle_quick_terminal
 quick-terminal-position = top
