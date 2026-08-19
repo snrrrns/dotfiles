@@ -15,4 +15,4 @@ initial-window = false
 quick-terminal-autohide = false
 quick-terminal-animation-duration = 0
 focus-follows-mouse = true
-macos-option-as-alt = true
+macos-option-as-alt = left
