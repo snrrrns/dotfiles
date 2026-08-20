@@ -1,21 +1,21 @@
-# 使いたい色の変数
-set -l blue             00bcc6
-set -l light_blue       8ed0ff
-set -l green            00c694
-set -l dark_green       287480
-set -l red              ff6161
-set -l pink             c600c0
-set -l light_pink       f8bbf6
-set -l orange           c66400
-set -l yellow           fff92f
+# 使いたい色の変数(Tokyo Nightのパレット)
+set -l blue             7aa2f7
+set -l light_blue       7dcfff
+set -l green            9ece6a
+set -l dark_green       3b4261
+set -l red              f7768e
+set -l pink             bb9af7
+set -l light_pink       bb9af7
+set -l orange           ff9e64
+set -l yellow           e0af68
 
 # 白と黒は誰が見ても同じなので、グローバルに登録
-set -g white            ffffff
-set -g black            000000
+set -g white            c0caf5
+set -g black            1a1b26
 
 # 抽象的な名前でグローバルに登録
-set -g color_dark       333333
-set -g color_discreet   757575
+set -g color_dark       24283b
+set -g color_discreet   565f89
 
 set -g color_main       $blue
 set -g color_main_light $light_blue
