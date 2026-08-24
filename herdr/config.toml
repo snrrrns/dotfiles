@@ -16,10 +16,11 @@ auto_switch = false
 [ui]
 pane_gaps = false
 pane_scrollbars = false
-agent_panel_sort = "spaces"
+agent_panel_sort = "priority"
 host_cursor = "drawn"
 
 show_agent_labels_on_pane_borders = true
+status_indicators = "symbols"
 [ui.sound]
 enabled = false
 
