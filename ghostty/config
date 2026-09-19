@@ -1,4 +1,6 @@
 font-family = Cousine Nerd Font
+# 日本語フォールバック
+font-family = Osaka
 font-size = 14
 font-thicken = true
 font-thicken-strength = 150
