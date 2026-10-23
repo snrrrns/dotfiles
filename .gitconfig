@@ -8,6 +8,8 @@
 [alias]
   cm = commit
   co = checkout
+  sw = switch
+  re = restore
   b = branch
   st = status
   df = diff
