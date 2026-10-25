@@ -24,7 +24,3 @@ alias dc='docker compose'
 
 export LSCOLORS=Gxfxcxdxbxegedabagacad
 
-# Added by LM Studio CLI (lms)
-set -gx PATH $PATH /Users/nakagawasuguru/.lmstudio/bin
-# End of LM Studio CLI section
-
